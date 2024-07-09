@@ -1,0 +1,18 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+:root {
+    --neutral-100: white;
+    --neutral-200: #dfe2e5;
+    --primary-1: #f32c46;
+    --neutral-600: #282d34;
+    --secondary-1: #202329;
+    --neutral-700: #11161e;
+    --neutral-500: #555b63;
+    --neutral-400: #82878c;
+    --neutral-300: #abafb2;
+    --neutral-800: #04080f;
+}

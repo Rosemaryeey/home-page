@@ -87,15 +87,17 @@
   font-size: 1.1rem;
 }
 .but {
+  
   width: 45vw;
+  height: 20vh;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: end;
 }
 .h1 {
-  width: 80vw;
+  width: 60vw;
   text-align: center;
-  font-size: 4rem;
+  font-size: 4.5rem;
   line-height: 1;
 }
 

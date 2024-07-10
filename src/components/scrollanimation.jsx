@@ -18,32 +18,45 @@ const ScrollAnimatedBox = () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
+  // window.innerWidth
 
-  const moveDistance = (scrollPosition % window.innerWidth) - 50;
+  const moveDistance = (scrollPosition % 1000) - 600 ;
 
   return (
     <div
       div
-      className=" relative flex flex-col-reverse w-[100%] h-[130vh] overflow-hidden  "
+      className=" relative flex flex-col-reverse w-[100%] md:h-[140vh] h-[105vh] overflow-hidden  "
     >
-      <div className="relative bottom-12 w-full h-[80vh] overflow-hidden bg-[rgb(243,44,70)]">
+      <div className="relative bottom-12 w-full h-[80vh]  overflow-hidden bg-[rgb(243,44,70)]">
         <div
-          className="absolute bottom-30 w-full h-[40vh] flex items-center pb-20 justify-around border-2"
-          style={{ transform: `translateX(${-moveDistance}px)` }}
+          className="absolute md:bottom-50 bottom-20  w-[200vw] h-[40vh] flex items-center justify-around"
+          style={{ transform: `translateX(${moveDistance}px)` }}
         >
-          <div className="w-[20vw] h-[40vh] bg-blue-500"></div>
+          <div className="w-[200vw] flex justify-around h-[40vh] items-center ">
+            <img src={About} alt="" className="w-[30vw]" />
+            <img src={Team} alt="" className="w-[30vw]" />
+            <img src={About} alt="" className="w-[30vw]" />
+            <img src={Shop} alt="" className="w-[30vw]" />
+            <img src={Shop} alt="" className="w-[30vw]" />
+            <img src={Shop} alt="" className="w-[30vw]" />
+          
+          </div>
         </div>
       </div>
       <div className=" bottom-12 w-full h-[50vh]  overflow-hidden  bg-[rgb(243,44,70)]">
         <div
-          className="absolute top-40 w-full h-[30vh] flex items-center justify-around"
-          style={{ transform: `translateX(${moveDistance}px)` }}
+          className="absolute md:top-40 top-20 w-[250vw] h-[30vh] flex items-center justify-around "
+          style={{ transform: `translateX(${-moveDistance}px)` }}
         >
-          <div className="w-[90vw] flex justify-around h-[40vh]">
-            <img src={About} alt="" />
-            <img src={Team} alt="" />
-            <img src={About} alt="" />
-            <img src={Shop} alt="" />
+          <div className="w-[250vw] flex justify-around h-[30vh] items-center">
+            <img src={About} alt="" className="w-[30vw] " />
+            <img src={Team} alt="" className="w-[30vw]" />
+            <img src={About} alt="" className="w-[30vw]" />
+            <img src={Shop} alt="" className="w-[30vw]" />
+            <img src={Shop} alt="" className="w-[30vw]" />
+            <img src={About} alt="" className="w-[30vw]" />
+            <img src={About} alt="" className="w-[30vw]" />
+            <img src={About} alt="" className="w-[30vw]" />
           </div>
         </div>
       </div>

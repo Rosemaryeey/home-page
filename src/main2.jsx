@@ -31,9 +31,9 @@ function Main2() {
   return (
     <main className=" flex items-center flex-col w-[100%]">
       {/* slide one  --------- */}
-      <div className="flex items-center justify-evenly flex-col md:w-[100%] w-[95vw] md:h-[100vh] h-[100vh] ">
-        <div className="flex items-center justify-around flex-col md:w-[45vw] w-[90vw] md:h-[60vh] h-[60vh]  ">
-          <div className=" flex flex-col items-center justify-around ">
+      <div className="flex items-center justify-evenly flex-col md:w-[100%] w-[95vw] md:h-[95vh] h-[100vh] ">
+        <div className="flex items-center justify-end flex-col md:w-[60vw] w-[90vw] md:h-[55vh] h-[60vh]    ">
+          <div className=" flex flex-col items-center justify-around  ">
             <h1 className="h1  font-bold ">ESPORTS X WEBFLOW TEMPLATE</h1>
             <p className=" p font-medium text-white/80  ">
               Presenting eSports X, the ultimate eSports & Gaming Webflow

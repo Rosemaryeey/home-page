@@ -25,27 +25,31 @@ import Aside2 from "./assets/aside2.png";
 import Aside3 from "./assets/aside3.png";
 import Aside4 from "./assets/aside4.png";
 import Aside5 from "./assets/aside5.png";
-
+import Pics from "./assets/pics.png"
+import Logo4 from "./assets/logo4.svg"
 function Main2() {
   return (
     <main className=" flex items-center flex-col w-[100%]">
       {/* slide one  --------- */}
-      <div className="flex items-center justify-evenly flex-col md:w-[100%] w-[95vw] md:h-[100vh] h-[120vh] ">
-        <div className="flex items-center justify-around flex-col w-[80vw] md:h-[60vh] h-[80vh] ">
-          <div className=" flex flex-col items-center justify-around   py-3">
-            <h1 className="h1 font-bold ">ESPORTS X WEBFLOW TEMPLATE</h1>
-            <p className=" p font-medium ">
+      <div className="flex items-center justify-evenly flex-col md:w-[100%] w-[95vw] md:h-[100vh] h-[100vh] ">
+        <div className="flex items-center justify-around flex-col w-[90vw] md:h-[60vh] h-[60vh]  ">
+          <div className=" flex flex-col items-center justify-around ">
+            <h1 className="h1  font-bold ">ESPORTS X WEBFLOW TEMPLATE</h1>
+            <p className=" p font-medium text-white/80  ">
               Presenting eSports X, the ultimate eSports & Gaming Webflow
               Template
             </p>
           </div>
 
           <div className=" but   ">
-            <Link to="" className=" hm border-2  border-[#f32c46] bg-[#f32c46]">
+            <Link
+              to=""
+              className=" hm border-2  border-[#f32c46] bg-[#f32c46] font-bold"
+            >
               {" "}
               BUY TEMPLATE
             </Link>
-            <Link to="" className="btn border-2 ">
+            <Link to="" className="btn border-2 font-bold">
               EXPLORE PAGES
             </Link>
           </div>
@@ -53,7 +57,7 @@ function Main2() {
       </div>
 
       {/* ------------slide two */}
-      <div className="flex items-center justify-evenly flex-col w-[100%] two h-[50vh]">
+      <div className="flex items-center justify-evenly  w-[100%] h-[100vh] ">
         <ScrollAnimatedBox />
       </div>
 
@@ -230,9 +234,9 @@ function Main2() {
           </div>
         </div>
       </div>
-      <div className="three w-[100%] h-[800vh] flex flex-col items-center justify-start">
-        <div className="h2 border-2 h-[50vh]   ">
-          <h1 className=" h  border-2 text-5xl font-bold  ">
+      <div className="three w-[100%]  flex flex-col items-center justify-around">
+        <div className="h2  h-[50vh]   ">
+          <h1 className=" h   text-5xl font-bold  pb-10 ">
             THE ESPORTS X WEBFLOW TEMPLATE ALSO COMES WITH MORE SURPRISES...
           </h1>
         </div>
@@ -256,10 +260,10 @@ function Main2() {
           <img className="ig0" src={Aside} alt="" />
         </div>
 
-        <div className="sec1 border-2 border-red-600 ">
+        <div className="sec1 ">
           <img className="ig0" src={Aside2} alt="" />
-          <div className=" ini  flex items-center justify-center border-2 border-yellow-900">
-            <div className=" ohi  border-2  border-yellow-600 py-5 pl-12  ">
+          <div className=" ini  flex items-center justify-center ">
+            <div className=" ohi  py-5 pl-12  ">
               <h1 className="num ">3 NOTIFICATION BARS</h1>
               <p>
                 If you are looking to get more sales, use one of our 3
@@ -274,9 +278,9 @@ function Main2() {
           </div>
         </div>
 
-        <div className="sec border-2 border-red-600   ">
-          <div className=" ini  flex items-center justify-center border-2 border-yellow-900">
-            <div className=" ohi  border-2  border-yellow-600 py-5  ">
+        <div className="sec   ">
+          <div className=" ini  flex items-center justify-center ">
+            <div className=" ohi  py-5  ">
               <h1 className="num ">CUSTOM ICON SET</h1>
               <p>
                 The eSports X Webflow Template includes 3 sets of custom icons
@@ -294,10 +298,10 @@ function Main2() {
 
           <img className="ig0" src={Aside3} alt="" />
         </div>
-        <div className="sec1 border-2 border-red-600 ">
+        <div className="sec1 ">
           <img className="ig0" src={Aside4} alt="" />
-          <div className=" ini  flex items-center justify-center border-2 border-yellow-900">
-            <div className=" ohi  border-2  border-yellow-600 py-5 pl-12  ">
+          <div className=" ini  flex items-center justify-center ">
+            <div className=" ohi  py-5 pl-12  ">
               <h1 className="num ">3 NOTIFICATION BARS</h1>
               <p>
                 If you are looking to get more sales, use one of our 3
@@ -312,9 +316,9 @@ function Main2() {
           </div>
         </div>
 
-        <div className="sec border-2 border-red-600 ">
-          <div className=" ini  flex items-center justify-center border-2 border-yellow-900">
-            <div className=" ohi  border-2  border-yellow-600 py-5  ">
+        <div className="sec ">
+          <div className=" ini  flex items-center justify-center ">
+            <div className=" ohi  py-5  ">
               <h1 className="num ">3 HEADERS AND FOOTERS</h1>
               <p>
                 With a total of 3 different headers and footers, you can easily{" "}
@@ -331,9 +335,50 @@ function Main2() {
           <img className="ig0" src={Aside5} alt="" />
         </div>
 
-        <div>
-          <div></div>
-          <div></div>
+        <div className=" md:flex-row flex-col flex items-center justify-center w-[95vw] border-2 md:h-auto h-[300vh]">
+          <div className="md:w-[45vw] w-[90vw] h-auto flex flex-col justify-center items-center bg-blue-600 text-white ia mb-20">
+            <div className=" flex flex-col items-start justify-around md:w-[40vw] w-[80vw] py-20">
+              <img src={Logo4} alt="" />
+              <h2 className=" xl:text-6xl md:text-5xl text-xl font-bold py-6">
+                BUY NOW ON WEBFLOW
+              </h2>
+              <p className="pb-10 ">
+                Get the ESport X Webflow Template Today, and take your Website
+                design to next level.
+              </p>
+
+              <div className="py-5 px-40 text-center bg-white text-blue-500">
+                <Link>BUY TEMPLATE</Link>
+              </div>
+            </div>
+            <div>
+              <img src={Pics} alt="" className="w-[100vw]" />
+            </div>
+          </div>
+          <div className="md:w-[45vw] w-[90vw] h-auto flex flex-col justify-center items-center bg-slate-50 text-black ia">
+            <div className=" flex flex-col items-start justify-around md:w-[40vw] w-[80vw] py-20">
+              <img
+                src={Logo3}
+                alt=""
+                className="p-3 shadow-2xl shadow-black/20"
+              />
+              <h2 className=" xl:text-6xl md:text-5xl text-xl font-bold py-6">
+                BROWSE ALL TEMPLATES
+              </h2>
+              <p className=" xl:text-6xl md:text-5xl text-xl font-bold pb-10 text-black/50">
+                Looking for more template? Browse our collection of 100+ Webflow
+                Templates on BRIXTemplate.com
+              </p>
+              <div>
+                <Link className="py-5 px-40 text-center bg-blue-700 text-white">
+                  EXPLORE MORE TEMPLATES
+                </Link>
+              </div>
+            </div>
+            <div>
+              <img src={Side2} alt="" className="" />
+            </div>
+          </div>
         </div>
       </div>
     </main>

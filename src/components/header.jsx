@@ -8,9 +8,9 @@ function Header() {
   return (
     <>
       <header className="md:h-[20vh] h-[15vh] w-[100%] flex items-center  justify-center fixed z-50 text-white  ">
-        <div className=" wow  w-[97vw] ">
-          <div className=" lo  p-3 ">
-            <img className="logo" src={Logo} alt="logo" />
+        <div className=" wow  w-[97vw]  py-5">
+          <div className=" lo  pl-7  w-[40vw]">
+            <img className="logo sm:w-[28vw]" src={Logo} alt="logo" />
           </div>
           <nav
             // role="navigate"
@@ -36,13 +36,13 @@ function Header() {
             </Link>
           </nav>
           <div className=" ok    ">
-            <Link className=" font-bold  ">CART[0]</Link>
+            <Link className=" font-bold CART ">CART()</Link>
             <a href="" className="button btn-p md:flex hidden">
               {" "}
               BUY MERCH
             </a>
-            <div className="button-primary menu bg-[#f32c46]  text-5xl">
-              <HiMenu />
+            <div className="button-primary menu bg-[#f32c46]  text-5xl ">
+              <HiMenu className=" z-50  " />
             </div>
           </div>
         </div>

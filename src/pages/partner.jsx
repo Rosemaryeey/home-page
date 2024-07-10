@@ -75,33 +75,46 @@ function Partner() {
             FOLLOW US ON <span className="text-[#f32c46]">INSTAGRAM</span>
           </h3>
           <div className="flex flex-wrap justify-center items-center   pt-10 ">
-            <div className="w-[12rem] sm:w-[18rem]   md:w-[25rem]  lg:w-[24vw] xl:w-[24.5vw] ">
+            <div className="w-[12rem] sm:w-[18rem]   md:w-[25rem]  lg:w-[24vw] xl:w-[24.5vw] x">
               <img
                 src={Music3}
                 alt="Music3"
                 className="w-full h-full object-cover"
               />
+              <div className="w-full h-0 g absolute bottom-0 left-0 group-hover:h-full transition-all duration-300 flex items-center justify-center ">
+                <img src="" alt="" />
+              </div>
             </div>
-            <div className="w-[12rem] sm:w-[18rem]   md:w-[25rem] lg:w-[24vw] xl:w-[24.5vw] ">
+            <div className="w-[12rem] sm:w-[18rem]   md:w-[25rem] lg:w-[24vw] xl:w-[24.5vw] x">
               <img
                 src={Music4}
                 alt="Music4"
                 className="w-full h-full object-cover"
               />
+              <div className="w-full h-0 g absolute bottom-0 left-0 group-hover:h-full transition-all duration-300 flex items-center justify-center ">
+                <img src="" alt="" />
+              </div>
             </div>
-            <div className="w-[12rem] sm:w-[18rem]   md:w-[25rem] lg:w-[24vw] xl:w-[24.5vw]  ">
+            <div className="w-[12rem] sm:w-[18rem] md:w-[25rem] lg:w-[24vw] xl:w-[24.5vw] relative group x">
               <img
                 src={Music3}
                 alt="Music3"
-                className="w-full h-full object-cover"
+                className="w-full h-full object-cover  "
               />
+              <div className="w-full h-0 g absolute bottom-0 left-0 group-hover:h-full transition-all duration-300 flex items-center justify-center">
+                <img src="" alt="" />
+              </div>
             </div>
-            <div className="w-[12rem] sm:w-[18rem]  md:w-[25rem] lg:w-[24vw] xl:w-[24.5vw]">
+
+            <div className="w-[12rem] sm:w-[18rem]  md:w-[25rem] lg:w-[24vw] xl:w-[24.5vw] x">
               <img
                 src={Music4}
                 alt="Music4"
                 className="w-full h-full object-cover"
               />
+              <div className="w-full h-0 g absolute bottom-0 left-0 group-hover:h-full transition-all duration-300 flex items-center justify-center ">
+                <img src="" alt="" />
+              </div>
             </div>
           </div>
         </div>

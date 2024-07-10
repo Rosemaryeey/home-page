@@ -7,7 +7,10 @@ import { HiMenu } from "react-icons/hi";
 function Header() {
   return (
     <>
-      <header className="md:h-[20vh] h-[15vh] w-[100%] flex items-center  justify-center fixed z-50 text-white  ">
+      <header
+        className="md:h-[20vh] h-[15vh] w-[100%] one flex items-center  
+      justify-center fixed z-50 text-white  "
+      >
         <div className=" wow  w-[97vw] ">
           <div className=" lo  p-3 ">
             <img className="logo" src={Logo} alt="logo" />

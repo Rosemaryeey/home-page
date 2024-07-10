@@ -13,10 +13,10 @@ import Shop from "./pages/shop";
 
 function App() {
   return (
-    <div className=" one text-white">
+    <div className=" one text-white ">
       <Header />
       <Routes>
-        <Route path="/" element ={<Main/>}/>
+        <Route path="/" element={<Main />} />
         <Route path="/home" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/team" element={<Team />} />

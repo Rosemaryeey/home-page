@@ -16,6 +16,10 @@ import Cannon2 from "/Cannon2.jpg";
 import { IoLogoTwitch } from "react-icons/io5";
 import { TiSocialFacebook } from "react-icons/ti";
 import { FaInstagram, FaYoutube } from "react-icons/fa";
+import Pad from "/Pad.jpg";
+import Speakers from "/speakers.jpg";
+import Speaker from "/speaker.jpg";
+import War from "/war.jpg";
 
 const Results = ({ num, text }) => (
   <div>
@@ -34,7 +38,7 @@ const Icons = ({ icon }) => (
 const Awards = ({ image, year }) => (
   <div>
     <div className="h-[40vh] ">
-      <div className="bg-[#202329] w-[20vw] h-[30vh] flex justify-center items-center">
+      <div className=" flex justify-center items-center">
         <img src={image} />
       </div>
     </div>
@@ -89,6 +93,11 @@ const Team = ({ image2, image, name }) => {
     </>
   );
 };
+const Instagram = ({ image }) => (
+  <div>
+    <img src={image} />
+  </div>
+);
 
 function About() {
   return (
@@ -102,12 +111,12 @@ function About() {
         <div className="flex justify-center items-center relative h-[170vh]">
           <div className="h-[10vh] w-[37vw]    ">
             <p
-              className="text-[76px] leading-[75px] font-extrabold z-40 absolute  
-            w-[49vw] top-[30%]"
+              className="text-[76px] leading-[77px] font-bold z-40 absolute  
+            w-[49vw] top-[32%]"
             >
               ABOUT DRAGON ESPORTS TEAM
             </p>
-            <p className="text-2xl w-[40vw] h-[21vh] ">
+            <p className="text-2xl w-[33vw] h-[18vh] ">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et quis
               odio vestibulum nunc, neque integer purus.
             </p>
@@ -159,7 +168,7 @@ function About() {
       </section>
       <section className="h-[190vh] flex justify-center items-center">
         <div className="">
-          <p className="text-[8vh] w-[38vw] leading-[56px]  font-bold">
+          <p className="text-[8vh] w-[38vw] leading-[56px] h-[18vh]  font-bold">
             HOW DRAGON ESPORTS STARTED
           </p>
           <p className="text-lg w-[43vw]">
@@ -184,23 +193,23 @@ function About() {
           />
         </div>
       </section>
-      <section className="relative flex justify-center w-[100%] h-[160vh]">
+      <section className="relative flex justify-center w-[100%] h-[150vh]">
         <div className="w-full">
           <div className="bg-[#11161e] h-[130vh] w-[44vw]"></div>
         </div>
         <div
           className="flex justify-center items-center flex-col text-center z-30 bottom-[37%]
-        right-[7%] absolute"
+        right-[5%] absolute"
         >
           <p className="text-[8vh] w-[36vw] leading-[56px] h-[11vh]  font-bold">
             OUR AWARDS
           </p>
-          <p className="text-lg w-[55vw] h-[21vh]">
+          <p className="text-lg w-[55vw] h-[14vh]">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. At at
             gravida platea congue. Gravida viverra id ac dui blandit in sed
             phasellus. Amet nisl sagittis feugiat in lacus.
           </p>
-          <div className="flex justify-between items-center w-[86vw] ">
+          <div className="flex justify-between items-center w-[90vw] ">
             <Awards image={first} year="2021" />
             <Awards image={second} year="2020" />
             <Awards image={first} year="2019" />
@@ -208,7 +217,7 @@ function About() {
           </div>
         </div>
       </section>
-      <section>
+      <section className="h-[120vh]">
         <div className="flex justify-between items-center w-[90vw]">
           <div>
             <p className="text-[8vh] w-[36vw] h-[13vh]  font-bold">OUR TEAM</p>
@@ -225,6 +234,17 @@ function About() {
           <Team image={John} name="JOHN CARTER" image2={John2} />
           <Team image={Dan} name="JOHN CARTER" image2={Dan2} />
           <Team image={Cannon} name="JOHN CARTER" image2={Cannon2} />
+        </div>
+      </section>
+      <section>
+        <p className="text-center text-[32px] font-bold h-[12vh]">
+          FOLLOW US ON <span className="text-red-500 ">INSTAGRAM</span>
+        </p>
+        <div className="flex ">
+          <Instagram image={Speakers} />
+          <Instagram image={Speaker} />
+          <Instagram image={War} />
+          <Instagram image={Pad} />
         </div>
       </section>
     </main>

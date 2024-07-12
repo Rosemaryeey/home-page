@@ -1,196 +1,129 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import React, { useContext, useState } from "react";
 import Logo from "../assets/logo.svg";
-import "./header.css";
 import { HiMenu } from "react-icons/hi";
 import { RiArrowDropDownLine } from "react-icons/ri";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import { useNavigate } from "react-router-dom";
+import { Context } from "./Context";
+// const navigate = useNavigate();
 
-function Header() {
+const Nav = ({ text, path }) => (
+  <p className="cursor-pointer hover:text-[#f32c46]">{text}</p>
+);
+const Nav1 = ({ text, source }) => {
+  const navigate = useNavigate();
+  const { menu, setMenu } = useContext(Context);
+
+  const close = () => {
+    setMenu(!menu);
+    navigate(source);
+  };
+
+  return (
+    <p
+      onClick={close}
+      className="cursor-pointer hover:text-[#f32c46] md:w-[7vw]  md:h-fit h-[5vh]   "
+    >
+      {text}
+    </p>
+  );
+};
+
+function header2() {
   const [display, setDisplay] = useState(true);
-  const [height, setHeight] = useState(true);
-  const [menu, setMenu] = useState(true);
+  const [height, setheight] = useState(true);
+  // const [menu, setMenu] = useState(true);
+  const { menu, setMenu } = useContext(Context);
   const closeMenu = () => {
     setMenu(!menu);
+    //
   };
   return (
-    <>
-      <header
-        className="md:h-[20vh] h-[15vh] w-[100%] one flex items-center  
-      justify-center fixed z-50 text-white  "
+    <main
+      className="w-[100%] md:h-[22vh] h-[19vh] flex justify-around items-center md:w-[100%]
+    md:text-[16.5px] text-[22px] font-serif fixed z-40 bg-[#04080f] font-bold "
+    >
+      <div className="lg:w-[16vw] md:w-[29vw] w-[38vw] ">
+        <img src={Logo} />
+      </div>
+      <div
+        className={` flex  top-[18%] md:h-[17vh] w-screen fixed h-screen md:static 
+          bg-[#04080f] flex-col md:flex-row  ${menu ? "hidden lg:flex" : "flex"}
+      justify-between md:items-center gap-6 md:gap-2 overflow-y-auto  md:overflow-hidden
+      items-start md:px-fit px-6 md:py-0  md:z-0 z-50 lg:w-[41vw]  `}
       >
-        <div className=" wow  w-[97vw]  ">
-          <div className=" lo  p-3 ">
-            <img className="logo" src={Logo} alt="logo" />
-          </div>
-          <div
-            className={`w-[100%] ${
-              menu ? "h-0" : "h-screen"
-            } bg-black top-[13%] fixed overflow-y-auto  z-50  `}
-          >
-            <nav
-              // role="navigate"
-              className=" nav   items-start h-[134vh]   "
+        <div
+          className="md:flex-row flex flex-col gap-7 md:gap-0  md:w-screen 
+        md:justify-between md:h-fit  h-[70vh]"
+        >
+          <Nav1 text="HOME" source="/home" />
+          <Nav1 text="ABOUT" source="/about" />
+          <Nav1 text="TEAM" source="/team" />
+          <Nav1 text="PARTNERS" source="/partner" />
+          <Nav1 text="SHOP" source="/shop" />
+          <div className=" flex justify-between w-[31vw] md:w-fit items-center">
+            <Nav1 text="PAGES" source="/pages" />
+            <span
+              className="text-2xl md:hidden hover:text-[#f32c46] "
+              onClick={() => {
+                setDisplay(!display);
+                setheight(!height);
+              }}
             >
-              <div className="h-[52vh] justify-between flex flex-col py-7 px-4  ">
-                <Link className="a" to="/home">
-                  HOME
-                </Link>
-                <Link className="a" to="/about">
-                  ABOUT
-                </Link>
-                <Link className="a" to="/team">
-                  TEAM
-                </Link>
-                <Link className="a" to="/partner">
-                  PARTNER
-                </Link>
-                <Link className="a" to="/shop">
-                  SHOP
-                </Link>
-                <Link
-                  className="a flex justify-between items-center w-[24vw]"
-                  to=""
-                >
-                  PAGES
-                  <span
-                    className="text-2xl"
-                    onClick={() => {
-                      setDisplay(!display);
-                      setHeight(!height);
-                    }}
-                  >
-                    {display ? <IoIosArrowDown /> : <IoIosArrowUp />}
-                  </span>
-                </Link>
-              </div>
-              <div className="flex px-4 ">
-                <div className={` w-[50vw] ${height ? "h-[0]" : "h-[80vh]"}`}>
-                  <div className="h-[33vh] flex flex-col gap-4">
-                    <Link
-                      onClick={closeMenu}
-                      className="a text-sm  font-thin"
-                      to="/home"
-                    >
-                      HOME
-                    </Link>
-                    <Link
-                      onClick={closeMenu}
-                      className="a text-md  font-thin "
-                      to="/about"
-                    >
-                      ABOUT
-                    </Link>
-                    <Link
-                      onClick={closeMenu}
-                      className="a text-md  font-extralight"
-                      to="/team"
-                    >
-                      TEAM
-                    </Link>
-                    <Link
-                      onClick={closeMenu}
-                      className="a text-md  font-extralight w-[49vw]"
-                      to=""
-                    >
-                      TEAM INDIVIDUAL
-                    </Link>
-                    <Link
-                      onClick={closeMenu}
-                      className="a text-md  font-extralight"
-                      to=""
-                    >
-                      NEWS
-                    </Link>
-                    <Link
-                      onClick={closeMenu}
-                      className="a text-md  font-extralight"
-                      to=""
-                    >
-                      NEWS INDIVIDUAL
-                    </Link>
-                  </div>
-                  <div className="flex flex-col gap-5 w-[63vw]">
-                    <Link
-                      onClick={closeMenu}
-                      className="a text-md  font-extralight"
-                      to="/about"
-                    >
-                      STYLE GUIDE
-                    </Link>
-                    <Link
-                      onClick={closeMenu}
-                      className="a text-md  font-extralight"
-                      to="/team"
-                    >
-                      404 NOT FOUND
-                    </Link>
-
-                    <Link
-                      onClick={closeMenu}
-                      className="a text-md  font-extralight w-[68vw]"
-                      to=""
-                    >
-                      PASSWORD PROTECTED
-                    </Link>
-                    <Link
-                      onClick={closeMenu}
-                      className="a text-md  font-extralight"
-                      to=""
-                    >
-                      LICENSES
-                    </Link>
-                    <Link
-                      onClick={closeMenu}
-                      className="a text-md  font-extralight"
-                      to=""
-                    >
-                      CHANGELOG
-                    </Link>
-                    <Link
-                      onClick={closeMenu}
-                      className="a w-[68vw] text-md   font-extralight"
-                      to=""
-                    >
-                      BROWSE MORE TEMPLATES
-                    </Link>
-                  </div>
-                </div>
-                <div className="flex flex-col gap-4">
-                  <Link className="a text-md  font-extralight" to="">
-                    SHOP
-                  </Link>
-                  <Link className="a text-md  font-extralight" to="">
-                    SHOP CMS
-                  </Link>
-                  <Link className="a text-md  font-extralight" to="">
-                    CONTACT
-                  </Link>
-                  <Link className="a text-md  font-extralight" to="">
-                    SPONSORS
-                  </Link>
-                </div>
-              </div>
-            </nav>
+              {display ? <IoIosArrowDown /> : <IoIosArrowUp />}
+            </span>
           </div>
-          <div className=" ok    ">
-            <Link className=" font-bold  ">CART[0]</Link>
-            <a href="" className="button btn-p md:flex hidden">
-              {" "}
-              BUY MERCH
-            </a>
-
-            <div
-              onClick={closeMenu}
-              className="button-primary menu bg-[#f32c46]  text-5xl"
-            >
-              <HiMenu />
+        </div>
+        <div
+          className={`md:hidden  font-medium  ${height ? "hidden" : "grid"} 
+          `}
+        >
+          <div className={` flex`}>
+            <div className="h-[40vh] flex flex-col gap-3 w-[55vw]">
+              <Nav text="HOME" source="/home" />
+              <Nav text="ABOUT" source="/about" />
+              <Nav text="TEAM" source="/team" />
+              <Nav text="TEAM INDIVIDUAL" source="" />
+              <Nav text="NEWS" source="" />
+              <Nav text="NEWS INDIVIDUAL" source="" />
+            </div>
+            <div className="h-[40vh] flex flex-col gap-3 ">
+              <Nav text="SHOP" source="/shop" />
+              <Nav text="SHOP CMS" source="" />
+              <Nav text="CONTACT" source="" />
+              <Nav text="SPONSORS" source="" />
+            </div>
+          </div>
+          <div className="h-[64vh] flex flex-col gap-3  w-[90vw] ">
+            <Nav text="STYLE GUIDE" />
+            <Nav text="START HERE" />
+            <Nav text="404 NOT FOUND" />
+            <Nav text="PASSWORD PROTECTED" />
+            <Nav text="LICENSES" />
+            <Nav text="CHANGELOG" />
+            <div>
+              <Nav text="BROWSE MORE TEMPLATES" />
+              <div className="border-b hover:border-red-500 h-[1vh]"></div>
             </div>
           </div>
         </div>
-      </header>
-    </>
+      </div>
+      <div className="flex justify-between items-center">
+        <p className="md:w-[7vw] w-[26vw] cursor-pointer">CART(O)</p>
+        <div className=" hidden md:flex">
+          <button className="bg-[#f32c46] w-[12vw] h-[9vh] text-white">
+            BUY MERCH
+          </button>
+        </div>
+        <div
+          onClick={closeMenu}
+          className="button-primary cursor-pointer lg:hidden bg-[#f32c46]  text-5xl"
+        >
+          <HiMenu />
+        </div>
+      </div>
+    </main>
   );
 }
 
-export default Header;
+export default header2;

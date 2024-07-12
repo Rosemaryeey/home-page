@@ -1,5 +1,5 @@
 import React from "react";
-import Header2 from "./components/header2";
+import Header from "./components/header";
 import "./App.css";
 import Main from "./main2";
 import Footer from "./components/footer";
@@ -18,7 +18,7 @@ function App() {
   return (
     <div className=" one text-white ">
       <Context.Provider value={{ menu, setMenu }}>
-        <Header2 />
+        <Header />
       </Context.Provider>
       <Routes>
         <Route path="/" element={<Main />} />

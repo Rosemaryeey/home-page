@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./components/header";
+import Header2 from "./components/header2";
 import "./App.css";
 import Main from "./main2";
 import Footer from "./components/footer";
@@ -10,11 +10,16 @@ import Team from "./pages/team";
 import Pages from "./pages/pages";
 import Partner from "./pages/partner";
 import Shop from "./pages/shop";
+import { useState } from "react";
+import { Context } from "./components/Context";
 
 function App() {
+  const [menu, setMenu] = useState(true);
   return (
     <div className=" one text-white ">
-      <Header />
+      <Context.Provider value={{ menu, setMenu }}>
+        <Header2 />
+      </Context.Provider>
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/home" element={<Home />} />

@@ -54,12 +54,12 @@ const Team = ({ image2, image, name }) => {
         onMouseEnter={() => {
           setTimeout(() => {
             setDisplay(true);
-          }, 500);
+          }, 200);
         }}
         onMouseLeave={() => {
           setTimeout(() => {
             setDisplay(false);
-          }, 500);
+          }, 200);
         }}
         className="relative"
       >
@@ -94,8 +94,18 @@ const Team = ({ image2, image, name }) => {
   );
 };
 const Instagram = ({ image }) => (
-  <div>
-    <img src={image} />
+  <div className="relative">
+    <img
+      src={image}
+      className="  
+    hover:opacity-10"
+    />
+    <div
+      className="absolute cursor-pointer inset-0 flex items-center justify-center bg-[#11161e] bg-opacity-75
+    opacity-0 hover:opacity-100 transition-opacity duration-300"
+    >
+      <FaInstagram className="text-[85px] text-white" />
+    </div>
   </div>
 );
 
@@ -111,7 +121,7 @@ function About() {
         <div className="flex justify-center items-center relative h-[170vh]">
           <div className="h-[10vh] w-[37vw]    ">
             <p
-              className="text-[76px] leading-[77px] font-bold z-40 absolute  
+              className="text-[76px] leading-[77px] font-bold z-30 absolute  
             w-[49vw] top-[32%]"
             >
               ABOUT DRAGON ESPORTS TEAM

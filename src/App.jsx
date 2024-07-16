@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "./components/header";
+// import Header from "./components/header";
 import "./App.css";
 import Main from "./main2";
 import Footer from "./components/footer";
@@ -14,7 +14,7 @@ import Shop from "./pages/shop";
 function App() {
   return (
     <div className=" one text-white">
-      <Header />
+      {/* <Header /> */}
       <Routes>
         <Route path="/" element ={<Main/>}/>
         <Route path="/home" element={<Home />} />

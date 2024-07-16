@@ -31,25 +31,27 @@ function Main2() {
   return (
     <main className=" flex items-center flex-col w-[100%]">
       {/* slide one  --------- */}
-      <div className="flex items-center justify-evenly flex-col md:w-[100%] w-[95vw] md:h-[95vh] h-[100vh] ">
-        <div className="flex items-center justify-end flex-col md:w-[60vw] w-[90vw] md:h-[55vh] h-[60vh]    ">
-          <div className=" flex flex-col items-center justify-around  ">
-            <h1 className="h1  font-bold ">ESPORTS X WEBFLOW TEMPLATE</h1>
-            <p className=" p font-medium text-white/80  ">
+      <div className="flex items-center md:justify-evenly justify-end flex-col md:w-[100%] w-[100%] md:h-[95vh] h-[90vh]   ">
+        <div className="flex items-center justify-end   flex-col md:w-[60vw] w-[99vw] md:h-[55vh] h-[60vh]  ">
+          <div className=" flex flex-col items-center justify-around    ">
+            <h1 className="h1  font-bold text-white/95 ">
+              ESPORTS X WEBFLOW TEMPLATE
+            </h1>
+            <p className="   p font-medium text-white/60  ">
               Presenting eSports X, the ultimate eSports & Gaming Webflow
               Template
             </p>
           </div>
 
-          <div className=" but   ">
+          <div className=" but    ">
             <Link
               to=""
-              className=" hm border-2  border-[#f32c46] bg-[#f32c46] font-bold"
+              className=" hm border-2   border-[#f32c46] bg-[#f32c46] font-bold"
             >
               {" "}
               BUY TEMPLATE
             </Link>
-            <Link to="" className="btn border-2 font-bold">
+            <Link to="" className="btn border-2 font-bold ">
               EXPLORE PAGES
             </Link>
           </div>
@@ -57,7 +59,7 @@ function Main2() {
       </div>
 
       {/* ------------slide two */}
-      <div className="flex items-center justify-evenly  w-[100%] h-[100vh] ">
+      <div className="flex items-center justify-evenly  w-[100%] h-[75vh] ">
         <ScrollAnimatedBox />
       </div>
 

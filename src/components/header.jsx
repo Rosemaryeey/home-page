@@ -1,7 +1,7 @@
 import React, { useContext, useState } from "react";
 import Logo from "../assets/logo.svg";
 import { HiMenu } from "react-icons/hi";
-import { RiArrowDropDownLine } from "react-icons/ri";
+
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 import { useNavigate } from "react-router-dom";
 import { Context } from "./Context";

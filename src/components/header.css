@@ -1,19 +1,18 @@
-/* .logo {
+.logo {
   transition: 0.1s ease-out;
 }
 .logo:hover {
   transform: scale(1.09);
 }
 
-.CART {
-  font-size: 1.1rem;
-}
-
 nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 35vw;
+  width: 50vw;
+  position: static;
+  z-index: 0;
+  top: 0;
 }
 .wow {
   display: flex;
@@ -71,8 +70,8 @@ a:hover {
 .ok {
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  width: 22vw;
+  justify-content: space-around;
+  width: 23vw;
 }
 .menu {
   display: none;
@@ -80,7 +79,10 @@ a:hover {
 
 @media screen and (max-width: 991px) {
   nav {
-    display: none;
+    flex-direction: column;
+    font-weight: bolder;
+    justify-content: space-between;
+    width: 50vw;
   }
   .wow {
     justify-content: space-between;
@@ -102,7 +104,7 @@ a:hover {
     font-size: larger;
   }
   .logo {
-    width: 40vw;
+    width: 30vw;
   }
 }
 
@@ -111,14 +113,8 @@ a:hover {
     width: 30vw;
   }
   .menu {
-    width: 8vw;
-    padding-right: 7px;
-    padding-left: 7px;
-    height: 8vh;
-  }
-  .menu:hover {
-    transform: scale3d(1.06, 1.06, 1.01);
-    box-shadow: 0 4px 18px rgba(223, 0, 0, 0.6);
+    width: 7vw;
+    height: 5vh;
   }
 }
 
@@ -150,4 +146,4 @@ a:hover {
     font-size: medium;
     width: 30vw;
   }
-} */
+}

@@ -51,7 +51,9 @@ function Main2() {
               {" "}
               BUY TEMPLATE
             </Link>
-            <Link to="" className="btn border-2 font-bold ">
+            <Link
+             to=""
+             className="btn border-2 font-bold ">
               EXPLORE PAGES
             </Link>
           </div>

@@ -54,7 +54,7 @@ function header2() {
       >
         <div
           className="md:flex-row flex flex-col gap-7 md:gap-0  md:w-screen 
-        md:justify-between md:h-fit  h-[70vh]"
+        md:justify-between md:h-fit  h-[70vh] border-2 border-white "
         >
           <Nav1 text="HOME" source="/home" />
           <Nav1 text="ABOUT" source="/about" />
@@ -79,7 +79,7 @@ function header2() {
           `}
         >
           <div className={` flex`}>
-            <div className="h-[40vh] flex flex-col gap-3 w-[55vw]">
+            <div className="h-[40vh] flex flex-col gap-3 w-[55vw] ">
               <Nav text="HOME" source="/home" />
               <Nav text="ABOUT" source="/about" />
               <Nav text="TEAM" source="/team" />

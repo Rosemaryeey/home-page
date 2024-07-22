@@ -5,20 +5,7 @@
   transform: scale(1.09);
 }
 
-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  width: 50vw;
-  position: static;
-  z-index: 0;
-  top: 0;
-}
-.wow {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
+/*  */
 
 .btn-p.button {
   letter-spacing: 0.06em;

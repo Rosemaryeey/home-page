@@ -49,17 +49,17 @@ function header2() {
       <div
         className={` flex  top-[18%] md:h-[17vh] w-screen fixed h-screen md:static 
           bg-[#04080f] flex-col md:flex-row  ${menu ? "hidden lg:flex" : "flex"}
-      justify-between md:items-center gap-6 md:gap-2 overflow-y-auto  md:overflow-hidden
-      items-start md:px-fit px-6 md:py-0  md:z-0 z-50 lg:w-[41vw]  `}
+      justify-evenly md:items-center gap-6 md:gap-2 overflow-y-auto  md:overflow-hidden
+      items-start md:px-fit px-6 md:py-0  md:z-0 z-50 lg:w-[42vw]  `}
       >
         <div
           className="md:flex-row flex flex-col gap-7 md:gap-0  md:w-screen 
-        md:justify-between md:h-fit  h-[70vh] border-2 border-white "
+        md:justify-evenly md:h-fit  h-[70vh] border-2 border-white "
         >
           <Nav1 text="HOME" source="/home" />
           <Nav1 text="ABOUT" source="/about" />
           <Nav1 text="TEAM" source="/team" />
-          <Nav1 text="PARTNERS" source="/partner" />
+          <Nav1 text="PARTNER" source="/partner" />
           <Nav1 text="SHOP" source="/shop" />
           <div className=" flex justify-between w-[31vw] md:w-fit items-center">
             <Nav1 text="PAGES" source="/pages" />

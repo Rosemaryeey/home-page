@@ -27,36 +27,37 @@ const ScrollAnimatedBox = () => {
       div
       className=" relative flex flex-col-reverse w-[100%] md:h-[140vh] h-[105vh] overflow-hidden  "
     >
-      <div className="relative bottom-12 w-full h-[80vh]  overflow-hidden bg-[rgb(243,44,70)]">
+      <div className="relative bottom-12 w-full xl:h-[250vh] h-[70vh]  overflow-hidden bg-[rgb(243,44,70)]">
         <div
-          className="absolute md:bottom-50 bottom-20  w-[200vw] h-[40vh] flex items-center justify-around"
-          style={{ transform: `translateX(${moveDistance}px)` }}
+          className="absolute xl:bottom-20 bottom-5 md:w-[200vw] w-[300vw] h-[45vh] flex items-center justify-around "
+          style={{ transform: `translateX(${-moveDistance}px)` }}
         >
-          <div className="w-[200vw] flex justify-around h-[40vh] items-center ">
-            <img src={About} alt="" className="w-[30vw]" />
-            <img src={Team} alt="" className="w-[30vw]" />
-            <img src={About} alt="" className="w-[30vw]" />
-            <img src={Shop} alt="" className="w-[30vw]" />
-            <img src={Shop} alt="" className="w-[30vw]" />
-            <img src={Shop} alt="" className="w-[30vw]" />
+          <div className="md:w-[200vw] w-[300vw] flex justify-around h-[50vh] items-center  ">
+            <img src={About} alt="" className="md:w-[30vw] w-[45vw]" />
+            <img src={Team} alt="" className="md:w-[30vw] w-[45vw]" />
+            <img src={About} alt="" className="md:w-[30vw] w-[45vw]" />
+            <img src={Shop} alt="" className="md:w-[30vw] w-[45vw]" />
+            <img src={Shop} alt="" className="md:w-[30vw] w-[45vw]" />
+            <img src={Shop} alt="" className="md:w-[30vw] w-[45vw]" />
+            {/* <img src={Shop} alt="" className="md:w-[30vw] w-[45vw]" /> */}
           
           </div>
         </div>
       </div>
-      <div className=" bottom-12 w-full h-[50vh]  overflow-hidden  bg-[rgb(243,44,70)]">
+      <div className=" bottom-12 w-full md:h-[50vh] h-[20vh] overflow-hidden  ">
         <div
-          className="absolute md:top-40 top-20 w-[250vw] h-[30vh] flex items-center justify-around "
-          style={{ transform: `translateX(${-moveDistance}px)` }}
+          className="absolute md:top-40 top-50 md:w-[250vw] w-[400vw]  h-[30vh] flex items-center justify-around "
+          style={{ transform: `translateX(${moveDistance}px)` }}
         >
-          <div className="w-[250vw] flex justify-around h-[30vh] items-center">
-            <img src={About} alt="" className="w-[30vw] " />
-            <img src={Team} alt="" className="w-[30vw]" />
-            <img src={About} alt="" className="w-[30vw]" />
-            <img src={Shop} alt="" className="w-[30vw]" />
-            <img src={Shop} alt="" className="w-[30vw]" />
-            <img src={About} alt="" className="w-[30vw]" />
-            <img src={About} alt="" className="w-[30vw]" />
-            <img src={About} alt="" className="w-[30vw]" />
+          <div className="md:w-[250vw] w-[400vw] flex justify-around md:h-[30vh] h-[20vh] items-center">
+            <img src={About} alt="" className="md:w-[30vw] w-[45vw] " />
+            <img src={Team} alt="" className="md:w-[30vw] w-[45vw]" />
+            <img src={About} alt="" className="md:w-[30vw] w-[45vw]" />
+            <img src={Shop} alt="" className="md:w-[30vw] w-[45vw]" />
+            <img src={Shop} alt="" className="md:w-[30vw] w-[45vw]" />
+            <img src={About} alt="" className="md:w-[30vw] w-[45vw]" />
+            <img src={About} alt="" className="md:w-[30vw] w-[45vw]" />
+            <img src={About} alt="" className="md:w-[30vw] w-[45vw]" />
           </div>
         </div>
       </div>

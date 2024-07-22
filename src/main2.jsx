@@ -275,8 +275,10 @@ function Main2() {
       <div className=" is  three">
         <div className=" h2">
           <div className="  flex flex-col items-center justify-around h-[20vh]   py-3">
-            <h1 className="h font-bold ">MAIN PAGE</h1>
-            <p className="p font-medium ">
+            <h1 className="font-bold px-10  text-[2.2rem] sm:text-2xl md:text-3xl lg:text-4xl ">
+              MAIN PAGE
+            </h1>
+            <p className="font-medium text-[1.08rem] sm:text-lg md:text-xl lg:text-2xl text-center">
               Take a look at the main pages included in the eSports X Template.
             </p>
           </div>
@@ -327,21 +329,18 @@ function Main2() {
           </div>
         </div>
         <div className=" hi">
-          <Link className=" hm md:border-2 border-0   border-[#f32c46] bg-[#f32c46]">
-            {" "}
-            BUY TEMPLATE
-          </Link>
+          <Button text="BUY TEMPLATE" />
         </div>
       </div>
 
       {/* -------------------SLIDE FIVE */}
       <div className="md:h-[100vh] h-[150vh] w-[95vw] flex flex-col items-center justify-center">
-        <div className="md:h-[100vh] h-[150vh] flex flex-col items-center justify-evenly w-full sm:w-[90vw] md:w-[85vw] lg:w-[80vw] xl:w-[70vw] border-red-600">
-          <div className=" text-center md:text-left">
-            <h1 className="font-bold px-10 text-xl sm:text-2xl md:text-3xl lg:text-4xl ">
+        <div className="md:h-[100vh] h-[170vh] flex flex-col items-center justify-evenly w-full sm:w-[90vw] md:w-[85vw] lg:w-[80vw] xl:w-[70vw] border-red-600">
+          <div className=" text-center md:text-left pt-20">
+            <h1 className="font-bold px-10  pb-2 text-[2.2rem] sm:text-2xl md:text-3xl lg:text-4xl ">
               UTILITY PAGES
             </h1>
-            <p className="font-medium text-base sm:text-lg md:text-xl lg:text-2xl">
+            <p className="font-medium text-[1.08rem] sm:text-lg md:text-xl lg:text-2xl">
               Take a look at the utility pages included in the eSports X
               Template.
             </p>
@@ -370,7 +369,7 @@ function Main2() {
             </div>
           </div>
 
-          <div className="mt-10">
+          <div className="pb-10 ">
             <Button text="BUY TEMPLATE" />
           </div>
         </div>

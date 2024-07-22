@@ -60,7 +60,6 @@
 
 .num {
   font-weight: 700;
-  
   font-size: 30px;
 }
 
@@ -89,7 +88,7 @@
 
 
 .box3 {
-  padding: 20px;
+  padding: 25px;
   background-color: #11161e;
   display: flex;
   flex-direction: column;
@@ -593,7 +592,7 @@
   }
   .bo {
     width: 100%;
-    height: 730vh;
+    height: 600vh;
     grid-row-gap: 5rem;
     justify-items: center;
     grid-template-columns: 90vw;
@@ -722,6 +721,14 @@
     height: 570vh;
     justify-content: center;
   }
+   .bo {
+    width: 100%;
+    height: 600vh;
+    grid-row-gap: 5rem;
+    justify-items: center;
+    grid-template-columns: 90vw;
+    grid-template-rows: 55vh 55vh 55vh 55vh 55vh 55vh 55vh 55vh 55vh 55vh;
+  }
 }
 
 @media screen and (max-width: 460px) {
@@ -761,12 +768,12 @@
   }
 
   .is {
-    height: 800vh;
+    height: 700vh;
     justify-content: space-evenly;
   }
 
   .bo {
-    height: 750vh;
+    height: 650vh;
   }
 
   .box3 {

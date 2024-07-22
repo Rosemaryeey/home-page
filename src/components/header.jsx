@@ -41,7 +41,7 @@ function header2() {
   return (
     <main
       className="w-[100%] md:h-[22vh] h-[19vh] flex justify-around items-center md:w-[100%]
-    md:text-[16.5px] text-[22px] font-serif fixed z-40 bg-[#04080f] font-bold "
+    md:text-[16.5px] text-[22px] font-serif fixed z-40 bg-[#04080f] font-bold border-2 "
     >
       <div className="lg:w-[16vw] md:w-[29vw] w-[38vw] ">
         <img src={Logo} />

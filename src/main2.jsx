@@ -43,7 +43,7 @@ function Main2() {
             <div
               className="
         xl:w-[75vw] lg:w-[80vw] md:w-[90vw] sm:w-[90vw] w-[90vw]
-        xl:h-[50vh] lg:h-[55vh] md:h-[54vh] sm:h-[55vh] h-[65vh]
+        xl:h-[50vh] lg:h-[55vh] md:h-[54vh] sm:h-[55vh] h-[60vh]
        flex flex-col items-center justify-between 
       "
             >
@@ -52,19 +52,19 @@ function Main2() {
           text-center font-bold  text-white/95
           xl:text-[4.8rem] lg:text-[4.4rem] md:text-[3.8rem]  sm:text-[3.5rem] text-[2.8rem]
             leading-[1]  xl:tracking-[0.07em] tracking-[0.1em]
-            sm:pb-3 pb-0
+            sm:pb-0 pb-0 
             "
               >
                 <span className="xl:block lg:flex items-center justify-center md:block  ">
                   ESPORTS
-                  <span className=" xl:inline block sm:inline-block "> X</span>
+                  <span className=" xl:inline sm:block inline "> X</span>
                 </span>
                 <span> WEBFLOW TEMPLATE</span>
               </h1>
               <p
                 className="
           text-center font-light md:font-medium text-white/90
-          xl:text-[1.09rem] lg:text-[1rem] md:text-[1rem] sm:text-[1.2rem] text-[1.2rem]
+          xl:text-[1.09rem] lg:text-[1rem] md:text-[1rem] sm:text-[1.2rem] text-[1rem]
          
         "
               >
@@ -116,8 +116,8 @@ function Main2() {
                 lineHeight: "1",
               }}
               className=" xl:w-[95vw] w-[]
-            xl:text-[3.5rem] lg:text-[3rem] md:text-[2.5rem] sm:text-[2.2rem] text-[2rem]
-             font-bold  "
+            xl:text-[3.5rem] lg:text-[3rem] md:text-[2.5rem] sm:text-[2.2rem] text-[2.2rem]  md:px-0 px-2 md:mb-0 mb-2
+             font-bold   "
             >
               WHAT IS INCLUDED IN ESPORTS X
             </h1>
@@ -125,7 +125,7 @@ function Main2() {
               style={{
                 textAlign: "center",
               }}
-              className=" text-[16px] font-[300] xl:w-[60vw] "
+              className=" text-[18px] font-[300] xl:w-[60vw] text-white/50 "
             >
               eSports X Webflow Template includes over 15 pages in total,and
               with more than 35 sections.
@@ -242,11 +242,11 @@ function Main2() {
             </div>
           </div>
 
-          <img className=" ig" src={Side} alt="" />
+          <img className=" ig object-cover " src={Side} alt="" />
         </div>
 
         <div className=" sec1 ">
-          <img className="ig " src={Side2} alt="" />
+          <img className="ig  object-cover " src={Side2} alt="" />
           <div className="in   pd flex items-center justify-center">
             <div className="h-[60vh] flex flex-col items-start justify-around ">
               <img src={Logo3} alt="" />
@@ -335,178 +335,200 @@ function Main2() {
       </div>
 
       {/* -------------------SLIDE FIVE */}
-      <div className="   la">
-        <div className=" l flex flex-col items-center justify-around  ">
-          <div className="h2   ">
-            <h1 className=" h    font-bold px-10 ">UTILITY PAGES</h1>
-            <p className="p font-medium ">
+      <div className="md:h-[100vh] h-[150vh] w-[95vw] flex flex-col items-center justify-center">
+        <div className="md:h-[100vh] h-[150vh] flex flex-col items-center justify-evenly w-full sm:w-[90vw] md:w-[85vw] lg:w-[80vw] xl:w-[70vw] border-red-600">
+          <div className=" text-center md:text-left">
+            <h1 className="font-bold px-10 text-xl sm:text-2xl md:text-3xl lg:text-4xl ">
+              UTILITY PAGES
+            </h1>
+            <p className="font-medium text-base sm:text-lg md:text-xl lg:text-2xl">
               Take a look at the utility pages included in the eSports X
               Template.
             </p>
           </div>
 
-          <div className="con pi   ">
-            <div className="ia">
-              <img className="box" src={P404} alt="" />
-              <p className=" num box2 ">404 NOT FOUND</p>
+          <div className="md:h-[100vh] h-[100vh] w-full flex flex-wrap justify-center gap-10">
+            <div className="flex flex-col items-center">
+              <img
+                className="box w-[80vw] sm:w-[60vw] md:w-[45vw] lg:w-[30vw] xl:w-[20vw]"
+                src={P404}
+                alt="404 Not Found"
+              />
+              <p className="num box2 text-center text-base sm:text-lg md:text-xl lg:text-2xl mt-4">
+                404 NOT FOUND
+              </p>
             </div>
-            <div className="ia">
-              <img className=" box" src={Protected} alt="" />
-              <p className=" num box2">PROTECTED PAGE</p>
+            <div className="flex flex-col items-center">
+              <img
+                className="box w-[80vw] sm:w-[60vw] md:w-[45vw] lg:w-[30vw] xl:w-[20vw]"
+                src={Protected}
+                alt="Protected Page"
+              />
+              <p className="num box2 text-center text-base sm:text-lg md:text-xl lg:text-2xl mt-4">
+                PROTECTED PAGE
+              </p>
             </div>
           </div>
-          <div className=" hi">
-            <Link className=" hm border-2  border-[#f32c46] bg-[#f32c46]">
-              {" "}
-              BUY TEMPLATE
-            </Link>
+
+          <div className="mt-10">
+            <Button text="BUY TEMPLATE" />
           </div>
         </div>
       </div>
-      <div className="three w-[100%]  flex flex-col items-center justify-around">
-        <div className="h2  h-[50vh]   ">
-          <h1 className=" h   text-5xl font-bold  pb-10 ">
+
+      {/* second to the last .................. */}
+      <div className="three  w-full flex flex-col items-center justify-around space-y-10 sm:w-[95vw] md:w-[95vw] lg:w-[90vw] xl:w-[70vw]">
+        <div className="h2 h-[50vh] w-[95vw]">
+          <h1 className="h text-4xl px-2 sm:text-4xl md:text-5xl lg:text-6xl font-bold pb-10 text-center sm:text-left">
             THE ESPORTS X WEBFLOW TEMPLATE ALSO COMES WITH MORE SURPRISES...
           </h1>
         </div>
 
-        <div className=" sec   ">
-          <div className=" ini  flex items-center justify-center">
-            <div className=" ohi  b py-5  ">
-              <h1 className="num ">3 HEADERS AND FOOTERS</h1>
-              <p>
-                With a total of 3 different headers and footers, you can easily{" "}
+        <div className="sec flex flex-col items-center w-full sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[45vw]">
+          <div className="ini flex items-center justify-center w-full">
+            <div className="ohi b md:py-5 md:px-5">
+              <h1 className="num text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center sm:text-left">
+                3 HEADERS AND FOOTERS
+              </h1>
+              <p className="text-[1.1rem] sm:text-base md:text-lg lg:text-xl text-center sm:text-left">
+                With a total of 3 different headers and footers, you can easily
                 customize the eSports X Webflow Template to fit your company
                 needs and requirements.
               </p>
-              <Link className=" hm border-2  border-[#f32c46] bg-[#f32c46]">
-                {" "}
+              <Link className="hm border-2 border-[#f32c46] bg-[#f32c46] block text-center mt-5 text-base sm:text-lg md:text-xl lg:text-2xl">
                 BUY TEMPLATE
               </Link>
             </div>
           </div>
-
-          <img className="ig0" src={Aside} alt="" />
+          <img className="ig0 mt-5" src={Aside} alt="" />
         </div>
 
-        <div className="sec1 ">
-          <img className="ig0" src={Aside2} alt="" />
-          <div className=" ini  flex items-center justify-center ">
-            <div className=" ohi  py-5 pl-12  ">
-              <h1 className="num ">3 NOTIFICATION BARS</h1>
-              <p>
+        <div className="sec1 flex flex-col items-center w-full sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[45vw]">
+          <img className="ig0 mb-5" src={Aside2} alt="" />
+          <div className="ini flex items-center justify-center w-full">
+            <div className="ohi md:py-5 md:pl-12">
+              <h1 className="num text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center sm:text-left">
+                3 NOTIFICATION BARS
+              </h1>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-center sm:text-left">
                 If you are looking to get more sales, use one of our 3
                 notification bars included in the eSports X Webflow Template,
                 and start promoting your products or services.
               </p>
-              <Link className=" hm border-2  border-[#f32c46] bg-[#f32c46]">
-                {" "}
+              <Link className="hm border-2 border-[#f32c46] bg-[#f32c46] block text-center mt-5 text-base sm:text-lg md:text-xl lg:text-2xl">
                 BUY TEMPLATE
               </Link>
             </div>
           </div>
         </div>
 
-        <div className="sec   ">
-          <div className=" ini  flex items-center justify-center ">
-            <div className=" ohi  py-5  ">
-              <h1 className="num ">CUSTOM ICON SET</h1>
-              <p>
+        <div className="sec flex flex-col items-center w-full sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[45vw]">
+          <div className="ini flex items-center justify-center w-full">
+            <div className="ohi py-5 px-5">
+              <h1 className="num text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center sm:text-left">
+                CUSTOM ICON SET
+              </h1>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-center sm:text-left">
                 The eSports X Webflow Template includes 3 sets of custom icons
                 (rounded, square and filled), so you can easily use more icon
                 fonts in your template. No matter if you are looking to add
                 another social media icon in the footer, or change the cart icon
                 in the header, we got you covered.
               </p>
-              <Link className=" hm border-2  border-[#f32c46] bg-[#f32c46]">
-                {" "}
+              <Link className="hm border-2 border-[#f32c46] bg-[#f32c46] block text-center mt-5 text-base sm:text-lg md:text-xl lg:text-2xl">
                 BUY TEMPLATE
               </Link>
             </div>
           </div>
-
-          <img className="ig0" src={Aside3} alt="" />
+          <img className="ig0 mt-5" src={Aside3} alt="" />
         </div>
-        <div className="sec1 ">
-          <img className="ig0" src={Aside4} alt="" />
-          <div className=" ini  flex items-center justify-center ">
-            <div className=" ohi  py-5 pl-12  ">
-              <h1 className="num ">3 NOTIFICATION BARS</h1>
-              <p>
+
+        <div className="sec1 flex flex-col items-center w-full sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[45vw]">
+          <img className="ig0 mb-5" src={Aside4} alt="" />
+          <div className="ini flex items-center justify-center w-full">
+            <div className="ohi md:py-5 md:pl-12 ">
+              <h1 className="num text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center md:text-left ">
+                3 NOTIFICATION BARS
+              </h1>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-center md:text-left  ">
                 If you are looking to get more sales, use one of our 3
                 notification bars included in the eSports X Webflow Template,
                 and start promoting your products or services.
               </p>
-              <Link className=" hm border-2  border-[#f32c46] bg-[#f32c46]">
-                {" "}
+              <Link className="hm border-2 border-[#f32c46] bg-[#f32c46] block text-center mt-5 text-base sm:text-lg md:text-xl lg:text-2xl">
                 BUY TEMPLATE
               </Link>
             </div>
           </div>
         </div>
 
-        <div className="sec ">
-          <div className=" ini  flex items-center justify-center ">
-            <div className=" ohi  py-5  ">
-              <h1 className="num ">3 HEADERS AND FOOTERS</h1>
-              <p>
-                With a total of 3 different headers and footers, you can easily{" "}
+        <div className="sec flex flex-col items-center w-full sm:w-[80vw] md:w-[70vw] lg:w-[60vw] xl:w-[45vw]">
+          <div className="ini flex items-center justify-center w-full">
+            <div className="ohi py-5 px-5">
+              <h1 className="num text-xl sm:text-2xl md:text-3xl lg:text-4xl text-center sm:text-left">
+                3 HEADERS AND FOOTERS
+              </h1>
+              <p className="text-sm sm:text-base md:text-lg lg:text-xl text-center sm:text-left">
+                With a total of 3 different headers and footers, you can easily
                 customize the eSports X Webflow Template to fit your company
                 needs and requirements.
               </p>
-              <Link className=" hm border-2  border-[#f32c46] bg-[#f32c46]">
-                {" "}
+              <Link className="hm border-2 border-[#f32c46] bg-[#f32c46] block text-center mt-5 text-base sm:text-lg md:text-xl lg:text-2xl">
                 BUY TEMPLATE
               </Link>
             </div>
           </div>
-
-          <img className="ig0" src={Aside5} alt="" />
+          <img className="ig0 mt-5" src={Aside5} alt="" />
         </div>
+      </div>
 
-        <div className=" md:flex-row flex-col flex items-center justify-center w-[95vw] border-2 md:h-auto h-[300vh]">
-          <div className="md:w-[45vw] w-[90vw] h-auto flex flex-col justify-center items-center bg-blue-600 text-white ia mb-20">
-            <div className=" flex flex-col items-start justify-around md:w-[40vw] w-[80vw] py-20">
-              <img src={Logo4} alt="" />
-              <h2 className=" xl:text-6xl md:text-5xl text-xl font-bold py-6">
-                BUY NOW ON WEBFLOW
-              </h2>
-              <p className="pb-10 ">
-                Get the ESport X Webflow Template Today, and take your Website
-                design to next level.
-              </p>
+      <div className=" md:flex-row flex-col flex items-center justify-center w-[95vw]  md:h-auto h-[220vh]">
+        <div className="md:w-[45vw] w-[90vw] h-auto flex flex-col justify-center items-center bg-blue-600 text-white ia mb-20 ">
+          <div className=" flex flex-col items-start justify-around md:w-[40vw] w-[80vw] pt-10">
+            <img src={Logo4} alt="" />
+            <h2 className=" xl:text-6xl md:text-5xl text-xl font-[800] py-6">
+              BUY NOW ON WEBFLOW
+            </h2>
+            <p className="pb-10 text-[1.2rem] ">
+              Get the ESport X Webflow Template Today, and take your Website
+              design to next level.
+            </p>
 
-              <div className="py-5 px-40 text-center bg-white text-blue-500">
-                <Link>BUY TEMPLATE</Link>
-              </div>
+            <div className=" py-5 px-20 font-[700] text-center bg-white text-blue-500 ml-4  ">
+              <Link>BUY TEMPLATE </Link>
             </div>
-            <div>
-              <img src={Pics} alt="" className="w-[100vw]" />
+
+            <div className=" mt-3">
+              <img
+                src={Pics}
+                alt=""
+                className=" h-[50vh] object-cover   bg-center w-[100%]  "
+              />
             </div>
           </div>
-          <div className="md:w-[45vw] w-[90vw] h-auto flex flex-col justify-center items-center bg-slate-50 text-black ia">
-            <div className=" flex flex-col items-start justify-around md:w-[40vw] w-[80vw] py-20">
-              <img
-                src={Logo3}
-                alt=""
-                className="p-3 shadow-2xl shadow-black/20"
-              />
-              <h2 className=" xl:text-6xl md:text-5xl text-xl font-bold py-6">
-                BROWSE ALL TEMPLATES
-              </h2>
-              <p className=" xl:text-6xl md:text-5xl text-xl font-bold pb-10 text-black/50">
-                Looking for more template? Browse our collection of 100+ Webflow
-                Templates on BRIXTemplate.com
-              </p>
-              <div>
-                <Link className="py-5 px-40 text-center bg-blue-700 text-white">
-                  EXPLORE MORE TEMPLATES
-                </Link>
-              </div>
-            </div>
+        </div>
+        <div className="md:w-[45vw] w-[90vw] h-auto flex flex-col justify-center items-center bg-slate-50 text-black ia">
+          <div className=" flex flex-col items-start justify-around md:w-[40vw] w-[80vw] py-10">
+            <img
+              src={Logo3}
+              alt=""
+              className="p-3 shadow-2xl shadow-black/20"
+            />
+            <h2 className=" xl:text-6xl md:text-5xl text-[1.2rem] font-[800] text-black/60 py-6">
+              BROWSE ALL TEMPLATES
+            </h2>
+            <p className=" xl:text-6xl md:text-5xl text-[1rem] font-bold pb-10 text-black/50">
+              Looking for more template? Browse our collection of 100+ Webflow
+              Templates on BRIXTemplate.com
+            </p>
             <div>
-              <img src={Side2} alt="" className="" />
+              <Link className=" py-5 px-10 text-center bg-blue-700 text-white">
+                EXPLORE MORE TEMPLATES
+              </Link>
             </div>
+          </div>
+          <div>
+            <img src={Side2} alt="" className="" />
           </div>
         </div>
       </div>

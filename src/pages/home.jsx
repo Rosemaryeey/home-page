@@ -5,12 +5,13 @@ import Wo from "../assets/wo.jpeg";
 import Isi from "../assets/isi.svg";
 import Isi2 from "../assets/isi2.svg";
 import Band from "../assets/band.jpeg";
+import Button from "../components/button"
 
 const Home = () => {
   return (
     <>
       <div className="w-[100%] h-[500vh] flex flex-col items-center">
-        <div className="w-[100%] h-[140vh] flex items-center justify-center bg-[url('./assets/bg.jpeg')] border-2">
+        <div className="w-[100%] h-[140vh] flex items-center justify-center bg-[url('./assets/bg.jpeg')] border-2 object-contain">
           <div className="w-[90vw] h-[140vh] flex items-center border-2">
             <div className="flex flex-col items-start justify-around h-[65vh] w-[60vw]">
               <h1 className="head font-bold text-3xl sm:text-4xl md:text-5xl lg:text-6xl">
@@ -20,10 +21,9 @@ const Home = () => {
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et quis
                 odio vestibulum nunc, neque integer purus.
               </p>
-              <div className="flex items-start justify-between w-[40vw] h-[20vh]">
-                <Link className="hm border-2 border-[#f32c46] bg-[#f32c46] text-base sm:text-lg md:text-xl lg:text-2xl">
-                  BUY MERCH
-                </Link>
+              <div className="flex md:flex-row flex-col  items-start justify-between md:w-[40vw] w-[90vw] h-[20vh]">
+                <Button text="   BUY MERCH" />
+                
                 <Link className="btn border-2 text-base sm:text-lg md:text-xl lg:text-2xl">
                   MEET THE TEAM
                 </Link>
